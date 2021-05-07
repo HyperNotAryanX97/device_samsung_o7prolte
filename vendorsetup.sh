@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_o7lte-userdebug
-add_lunch_combo omni_o7lte-eng
+add_lunch_combo omni_o7prolte-userdebug
+add_lunch_combo omni_o7prolte-eng
