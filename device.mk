@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/o7lte
+LOCAL_PATH := device/samsung/o7prolte
 
