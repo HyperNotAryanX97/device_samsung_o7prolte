@@ -22,15 +22,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from o7lte device
-$(call inherit-product, device/samsung/o7lte/device.mk)
+$(call inherit-product, device/samsung/o7prolte/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := o7lte
-PRODUCT_NAME := omni_o7lte
+PRODUCT_DEVICE := o7prolte
+PRODUCT_NAME := omni_o7prolte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G600FY
 PRODUCT_MANUFACTURER := samsung
