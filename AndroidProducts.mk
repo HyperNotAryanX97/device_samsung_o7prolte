@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_o7lte.mk
+     $(LOCAL_DIR)/omni_o7prolte.mk
