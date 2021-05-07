@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/o7lte
+DEVICE_PATH := device/samsung/o7prolte
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -29,7 +29,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := o7lte
+TARGET_OTA_ASSERT_DEVICE := o7prolte
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -56,8 +56,8 @@ BOARD_MKBOOTIMG_ARGS += --dt $(TARGET_PREBUILT_DT)
 BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/samsung/o7lte
-TARGET_KERNEL_CONFIG := o7lte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/o7prolte
+TARGET_KERNEL_CONFIG := msm8916_sec_o7lte_swaopen_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
@@ -67,9 +67,16 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-# TWRP Configuration
-TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
+# SHRP Configuration
+SHRP_DEVICE_CODE := o7prolte
+SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := AryAn_AhiRe
+SHRP_DEVICE_TYPE := A_Only
+SHRP_REC := /dev/block/mmcblk0p17
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_EXPRESS := true
+SHRP_DARK := true
+SHRP_NO_SAR_AUTOMOUNT := true
