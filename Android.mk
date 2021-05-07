@@ -18,6 +18,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), o7lte)
+ifeq ($(TARGET_DEVICE), o7prolte)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
